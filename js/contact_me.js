@@ -27,6 +27,7 @@ $(function() {
                     message: message
                 },
                 cache: false,
+                success: true,
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
