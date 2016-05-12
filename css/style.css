@@ -229,7 +229,9 @@ section#contact .panel-default {
     margin-top: 0; }
   section#contact .extra-padding {
     padding-left: 1px;
-    padding-right: 1px; } }
+    padding-right: 1px; }
+  section#contact .email-font {
+    font-size: 0.96em; } }
 footer {
   color: #fff; }
   footer h3 {
