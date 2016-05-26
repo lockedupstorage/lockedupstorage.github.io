@@ -73,7 +73,7 @@ header
 				font-size: 16px
 				font-weight: 300
 				color: #fff
-			h3 
+			h3, h4 
 				font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
 				font-size: 26px
 				line-height: 45px
@@ -85,6 +85,14 @@ header
 				background: -o-radial-gradient(rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.08), transparent)/* For Opera 11.6 to 12.0 */
 				background: -moz-radial-gradient(rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.08), transparent) /* For Firefox 3.6 to 15 */
 				background: radial-gradient(rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.08), transparent)/* Standard syntax (must be last) */
+			h4
+				font-size: 20px 
+				padding: 0
+				margin: -10px 0 0 0
+				line-height: inherit
+				font-style: italic
+			h4.hidden-mobile
+				display: none
 			a.btn-primary
 				background-color: rgba(0, 0, 0, 0.41)
 				&:hover
@@ -124,6 +132,8 @@ header
 			.header-content-inner 
 				img 
 					width: 87%
+				h3 
+					margin-top: 10px
 
 @media(min-width : 960px) 
 	header 
@@ -138,7 +148,11 @@ header
 		.header-content 
 			.header-content-inner 
 				img 
-					width: 75%		
+					width: 75%	
+				h3
+					margin-top: 0px	
+				h4.hidden-mobile
+					display: inherit
 
 @media(min-width : 1400px) 
 	header 
@@ -194,10 +208,19 @@ section#services
 .service-box 
 	max-width: 400px
 	margin: 10px auto 0
+	min-height: 130px
 
 @media only screen and (min-width : 992px)
 	.service-box 
 		margin: 20px auto 0
+
+@media(min-width : 316px)
+	.service-box
+		min-height: 110px
+
+@media(min-width : 768px)
+	.service-box
+		min-height: 0
 
 section#about
 	padding-top: 30px
@@ -451,6 +474,15 @@ nav.navbar-default .navbar-brand
 	.navbar-default		
 		.medium-screen-hide
 			display: block
+
+@media(min-width:1200px) 
+	.navbar-default		
+		a.phone
+			font-size: 23px
+			padding-top: 13.5px
+			padding-bottom: 13.5px
+	.navbar-default .navbar-nav > li > a.phone
+		color: #565656
 
 .modal-body
 	font-family: 'Lato', sans-serif
