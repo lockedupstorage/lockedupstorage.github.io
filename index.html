@@ -105,8 +105,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <!-- <span class="section-heading">Storage at $150 PER WEEK or $400 PER MONTH</span> -->
-                     <span class="section-heading"><span class="text-underline">Storage Unit Sizes</span> - Small (2.8 x 3.0m) Medium (3.0 x 3.0m) Large (3.6 x 3.0m) Extra Large (3.8 x 4.8m)</span>
-                   <!--  <button type="button" class="btn btn-default btn-xl" data-toggle="modal" data-target="#myModal">Learn More</button> -->
+                     <!-- <span class="section-heading"><span class="text-underline">Storage Unit Sizes</span> - Small (2.8 x 3.0m) Medium (3.0 x 3.0m) Large (3.6 x 3.0m) Extra Large (3.8 x 4.8m)</span> -->
+                    <span class="section-heading"><span class="text-underline">Storage Unit Sizes</span> – <strong>A)</strong> 9 sq/m <strong>B)</strong> 12 sq/m <strong>C)</strong> 14.5 sq/m <strong>D)</strong> 16 sq/m <strong>E)</strong> 35 sq/m</span>
+
+                    <button type="button" class="btn btn-default btn-xl" data-toggle="modal" data-target="#myModalSizes"><!-- Learn More -->click here</button>
                 </div>
             </div>
         </div>
@@ -266,7 +268,7 @@
 
             <div class="row">
                 <div class="col-lg-offset-1 col-lg-5 table-align text-center">
-                    <p class="table-cell-align">As with our storage site we have 24/7 CCTV surveillance both inside and outside the premises, also with a 2 point locking system to ensure that your precious vehicles are safe and protected keeping them ‘Locked-up’. </p>
+                    <p class="table-cell-align">As with our storage site we have 24/7 CCTV surveillance both inside and outside the premises, also with a 2 point locking system to ensure that your belongings are safe and protected keeping them ‘Locked-up’. </p>
                 </div>
 
                 <div class="col-lg-6">
@@ -433,6 +435,30 @@
     <!--end bootstrap modal -->
 
 
+    <!-- Sizes Modal -->
+    <div class="modal fade" id="myModalSizes" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Storage Unit Sizes &amp; Prices</h4>
+          </div>
+          <div class="modal-body">
+                <img src="img/sizes.png" alt="" class="img-responsive">
+            <!-- <p class="text-black">Contact us for more information.</p> -->
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal" id="MyButton">Contact Us</button> -->
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--end bootstrap modal -->
+
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery-1.11.2.min.js"></script>
@@ -478,7 +504,8 @@
 
         });
     </script>
-
+    
+    // <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 
 </html>
